@@ -3,15 +3,24 @@
 
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
         <title>HSR_Kz's_webpage</title>
         <meta charset="UTF-8">
         <style>
             body{
                 background-color:rgb(66, 60, 70);
                 color: rgb(251, 231, 255);
-                font-family: 'Times New Roman', Times, serif;
+                font-family: monospace, 'Times New Roman', Times, serif;
+}
+
             }
             p{
+                margin: 15px;
+                padding: 10px;
+            }
+            img{
                 margin: 15px;
                 padding: 10px;
             }
@@ -46,11 +55,36 @@
                 width:500px;
             }
             #begin{
-                margin: 50px;
+                margin: 60px;
+                display: grid;
+                grid-template-columns: 40% 60%;
+            }
+            #second{
+                margin: 60px;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            #third{
+                margin: 60px;
                 display: grid;
                 grid-template-columns: 50% 50%;
-
-                
+            }
+            #image-three{
+                height: 200px;
+                width: 350px;
+            }
+            #image-four{
+                height: 200px;
+                width: 350px;
+            }
+            #final{
+                margin: 60px;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                display:flex;
+                align-items: center;
             }
             
             
@@ -66,8 +100,7 @@
             and fantasy. What makes it special is its turn-based combat, 
             an adventure driven story, exploration of several worlds, battling enemies,
             solving puzzles, and uncovering mysteries of the universe.</p>
-        <a href="https://honkai-star-rail.fandom.com/wiki/Honkai:_Star_Rail_Wiki" target="_blank" id="wiki">Honkai: Star Rail Wiki</a></div>
-        </div>
+        <a href="https://honkai-star-rail.fandom.com/wiki/Honkai:_Star_Rail_Wiki" target="_blank" id="wiki">Honkai: Star Rail Wiki</a>
         <h4>Gameplay</h4>
         <p>Honkai: Star Rail's gameplay combines exploration of many worlds with strategic turn-based 
             combat. During combat you have options to select certain actions, such as
@@ -75,13 +108,16 @@
             character roles. The player builds a team of four characters, each with unique abilities and stories.
             Each character belongs to a specific combat type and path, which define their roles
             in battle.</p>
+            </div></div>
+        <div id="second">
+        <img id="image-two"src="https://kotaku.com/app/uploads/2024/04/df81d53becd252848b607a6fb26c59d3.jpg" 
+        alt="Main Astral Express crew"/>
+        <div>
         <h4>Story</h4>
         <p>The player takes on the role of the Trailblazer, a character experiencing a
             total loss of memory, who travels the galaxy on the Astral Express(a spaceship).
             The story involves uncovering secrets of worlds, learning and meeting characters,
             solving conflicts of stories, and experiencing the dark and light moments.</p>
-        <img id="image-two"src="https://kotaku.com/app/uploads/2024/04/df81d53becd252848b607a6fb26c59d3.jpg" 
-        alt="Main Astral Express crew"/>
         <h4>Gacha Sytem</h4>
         <p>If you don't know already, a gacha game uses a 'gacha' or a 'loot box' mechanic to reward the player
             with randomized virtual items such as charcters and equipment. You use in game currency that can
@@ -90,6 +126,9 @@
             to pull for characters or Light Cones(weapons). It features a pity system that guarentees a 5-star
             item after a certain amount of pulls. It also features different banners with limited-time characters
             and some permanent standard banners.</p>
+        </div></div>
+        <div id = "third">
+        <div>
         <h4>Honkai series</h4>
         <p>The Hoyoverse(global entertainment brand and publishing subsidiary of the Chinese
             company miHoYo) Honkai series is a shared multiverse of games developed by miHoY,
@@ -100,7 +139,8 @@
             <li>Honkai Impact 3rd</li>
             <li>Honkai: Star Rail</li>
             <li>Honkai: Nexus Anima(in development)</li>
-        </ul>
+        </ul></div>
+        <div>
         <h4>Other Hoyoverse games</h4>
         <p>If you've ever heard of Hoyoverse, you've probably heard of Genshin Impact. I won't
             go into much detail about it, but it is Hoyoverse's other popular game, an action
@@ -116,6 +156,12 @@
             <li>Zenless Zone Zero</li>
             <li>Tears of Themis</li>
         </ul>
+        </div></div>
+        <div id="final">
+        <div>
+        <img id="image-three" src="https://preview.redd.it/commemorative-illustration-celebrating-100-days-since-star-v0-7ocyiu5op0gb1.jpg?width=1080&crop=smart&auto=webp&s=78b1c67bc902cbce52f0d5eadda7a7612f651c78" 
+        alt="A lot of the characters"/>
+        </div><div>
         <h2><u>Why I like it!</u> ദ്ദി(˵ •̀ ᴗ - ˵ ) </h2>
         <p>I like Honkai: Star Rail for an abundence of reasons. The combat is exactly my cup of tea,
             playing a turn-based game gives me time to strategize in between turns and evaluate my team, 
@@ -125,7 +171,10 @@
         <p>I also really enjoy the story and characters. I have played many games by the same company
             and many others, yet for some reason Honkai: Star Rail's story catches my attention. 
             I love the stories of each individual character, the character design, and so much more. 
-            Overall It's just a really great game and if any of these aspects catch your attention try it</p>
-            out!</p>
+            Overall It's just a really great game and if any of these aspects catch your attention try it!</p>
+        </div><div>
+        <img id="image-four" src="https://preview.redd.it/honkai-star-rail-on-a-train-c-by-v0-l06aqncn637b1.jpg?width=640&crop=smart&auto=webp&s=979d72e7fac8be40e82d4a6e47d6b5efbe121918" 
+        alt="A lot of the characters on a train"/>
+        </div></div>
     </body>
 </html>
