@@ -1,0 +1,85 @@
+<!--KR 6th Hidden Image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Image</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(197, 147, 124);
+        }
+        h2{
+            color: rgb(104, 141, 96);
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(86, 168, 134);
+        }
+        #one_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #first{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }#second{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+        img{
+            margin: 10px;
+            padding: 10px;
+            height: 200px;
+        }#six{
+            display: none;
+        }
+    </style>
+    <script>
+        function appear(){
+            document.getElementById("six").display = ""
+        }
+    </script>
+</head>
+<body>
+    <h1>₍^. .^₎⟆*!Cats!*₍^. .^₎⟆</h1>
+    <h2>Why cats?</h2>
+    <p>A cat is a domesticated, small, carnivorous mammil kept as a pet, known for its agility, soft fur 
+        and hunting instincts. At the moment I have three cats, Shadow is our Calico cat that has dark fur 
+        with some brown spots. And Lila is our shorthaired cat with grey fur and bright green eyes. I have had
+        a couple other cats, Lilith, Milo, and Hobo. I like cats because they can chill, crazy, and fun all at 
+        the same time. And from my experience they take way less care than dogs.</p>
+    <p>
+        It's an on going debate on whether cats or dogs are better, and my answer is both. Despite this 
+        website being about cats, I also love dogs. When I had my cat Milo, my dog Indie, who is a
+        chihuahua loved him. They got along really well and loved to play and spend time with eachother.
+        All the cats that I have had love cuddling and even if they might not be pretty social, they aren't 
+        mean. <span id ="word"onmouseenter="" onmouseleave="">I love cats so much!</span></p>
+    <h2>Images!!(can you find the hidden one? Move your curser around the first paragraph to find the secret
+        spot)</h2>
+    <div id = "one_wrapper">
+    <div id = "first">
+    <img id="one" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200" 
+    alt="Cute shorthair looking back at the camera with a black backround"/>
+    <img id="two" src="https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg"
+    alt="two cats standing next to eachother looking in opposite directions"/>
+    <img id="three" src="https://ih1.redbubble.net/image.5607603630.2658/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+    alt="Silly edited cat with lollipop"/></div>
+    <div id = "second">
+    <img id="four" src="https://www.lemon8-app.com/seo/image?item_id=7313250066284708358&index=2&sign=05c6929f0e1da7415aa449b94ff6ac6e" 
+    alt="shocked cat"/>
+    <img id="five" src="https://i.pinimg.com/736x/ef/aa/85/efaa85262c2979c0bce49d0dc643d49e.jpg" 
+    alt="sitting cat"/>
+    <img id="six" src="https://media.tenor.com/EmZ0N3llkAkAAAAe/cat-cats.png" 
+    alt="woo hoo cats dancing"/>
+    </div></div>
+
+    
+    
+</body>
+</html>
