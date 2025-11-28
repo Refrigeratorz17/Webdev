@@ -38,30 +38,51 @@
             height: 200px;
         }#six{
             display: none;
+        }ul{
+            color:rgb(154, 87, 87)
         }
     </style>
     <script>
-        function appear(){
-            document.getElementById("six").display = ""
-        }
+        showing = "none"
+        function show(){
+            if(showing == "none"){
+            document.getElementById("six").style.display = "block"
+            showing = "block"}
+            else{
+                document.getElementById("six").style.display = "none" 
+                showing = "none"
+        }}
     </script>
 </head>
 <body>
     <h1>₍^. .^₎⟆*!Cats!*₍^. .^₎⟆</h1>
     <h2>Why cats?</h2>
     <p>A cat is a domesticated, small, carnivorous mammil kept as a pet, known for its agility, soft fur 
-        and hunting instincts. At the moment I have three cats, Shadow is our Calico cat that has dark fur 
+        and hunting instincts. At the moment I have two cats, Shadow is our Calico cat that has dark fur 
         with some brown spots. And Lila is our shorthaired cat with grey fur and bright green eyes. I have had
-        a couple other cats, Lilith, Milo, and Hobo. I like cats because they can chill, crazy, and fun all at 
+        a couple other cats, Lilith, Milo, and Hobo. I like cats because they can be chill, crazy, and fun all at 
         the same time. And from my experience they take way less care than dogs.</p>
     <p>
         It's an on going debate on whether cats or dogs are better, and my answer is both. Despite this 
         website being about cats, I also love dogs. When I had my cat Milo, my dog Indie, who is a
         chihuahua loved him. They got along really well and loved to play and spend time with eachother.
         All the cats that I have had love cuddling and even if they might not be pretty social, they aren't 
-        mean. <span id ="word"onmouseenter="" onmouseleave="">I love cats so much!</span></p>
-    <h2>Images!!(can you find the hidden one? Move your curser around the first paragraph to find the secret
-        spot)</h2>
+        mean. <span onmouseenter="show()" onmouseleave="show()">I love cats so much!</span> Here is a list of some well known cat breeds!
+    </p>
+    <ul>
+        <li>Maine coon</li>
+        <li>Sphynx</li>
+        <li>Ragdoll</li>
+        <li>British shorthair</li>
+        <li>Persian</li>
+        <li>Abyssinian</li>
+        <li>Scottish fold</li>
+        <li>Devon rex</li>
+        <li>Siamese</li>
+    </ul>
+
+    <h2>Images!!(can you find the hidden image? Move your curser around the words in the second paragraph to find the secret
+        spot and make the image appear!)</h2>
     <div id = "one_wrapper">
     <div id = "first">
     <img id="one" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200" 
@@ -75,6 +96,7 @@
     alt="shocked cat"/>
     <img id="five" src="https://i.pinimg.com/736x/ef/aa/85/efaa85262c2979c0bce49d0dc643d49e.jpg" 
     alt="sitting cat"/>
+
     <img id="six" src="https://media.tenor.com/EmZ0N3llkAkAAAAe/cat-cats.png" 
     alt="woo hoo cats dancing"/>
     </div></div>
