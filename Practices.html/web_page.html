@@ -51,7 +51,7 @@
             }
             #image-two{
                 height:300px;
-                width:500px;
+                width:auto;
             }
             #begin{
                 margin: 60px;
@@ -79,15 +79,58 @@
                 width: 350px;
             }
             #final{
+                display: none;
+            }#finals{
                 margin: 60px;
                 display: grid;
                 grid-template-columns: 1fr 2fr 1fr;
                 display:flex;
                 align-items: center;
+            }#buttondiv{
+                text-align: center;
+            }#button{
+                padding: 20px;
+                font-family: 'Times New Roman', Times, serif;
             }
-            
-            
+
+
         </style>
+        <script>
+            let images = ["https://cdn.simulationdaily.com/2025/08/3e2ddea5-honkai-star-rail-3.5.jpg"
+            ,"https://static.gosugamers.net/d1/76/9d/b9ed5e9d65f8d63b2280b5a2bc89a37dd63645f110e2b169302d851111.webp?w=1600",
+            "https://gaminglog.es/wp-content/uploads/2023/05/Honkai.jpg"
+            ,"https://blogs.nvidia.com/wp-content/uploads/2024/05/gfn-thursday-5-9-nv-blog-1280x680-no-copy.jpg"
+            ,"https://cdn.simulationdaily.com/2025/03/d9797f0f-honkai-star-rail-version-3.2-key-visual.jpg"
+            ,"https://cdn.mos.cms.futurecdn.net/V8J9gTFvmJnuBPTqNgih4Z.png","https://mp1st.com/wp-content/uploads/2025/05/Honkai-Star-Rail.png.webp"
+            ,"https://animationxpress.com/wp-content/uploads/2025/02/Star-Rail.jpg"
+            ,"https://www.gadgetmatch.com/wp-content/uploads/2024/07/honkai-star-rail-version-2.4-update-fate-stay-night-collaboration-2025-20240722-gadgetmatch.jpg"
+            ,"https://assetsio.gnwcdn.com/Honkai-Star-Rail-1.2-Key-Art.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"]
+            let counter = 0
+            showing = "none"
+            function show(){
+                if(showing == "none"){
+                document.getElementById("final").style.display = "block" 
+                showing = "block"
+                document.getElementById("button").innerHTML = "Click to see less"}
+                else{
+                document.getElementById("final").style.display = "none" 
+                showing = "none"
+                document.getElementById("button").innerHTML = "Click to show more"}
+            }
+            function change(){
+                if(counter < images.length){
+                    document.getElementById("image-two").src = images
+                    [counter]
+                    counter += 1
+                }else{
+                    counter = 0
+                    document.getElementById("image-two").src = images
+                    [counter]
+                }
+            }
+
+            
+        </script>
     </head>
     <body>
         <h1><span id="start">✦⋆˙⟡-</span>Honkai: Star Rail<span id="finish">-⟡˙⋆✦</span></h1>
@@ -109,14 +152,15 @@
             in battle.</p>
             </div></div>
         <div id="second">
-        <img id="image-two"src="https://kotaku.com/app/uploads/2024/04/df81d53becd252848b607a6fb26c59d3.jpg" 
+        <img id="image-two" onmouseover="change()" src="https://kotaku.com/app/uploads/2024/04/df81d53becd252848b607a6fb26c59d3.jpg" 
         alt="Main Astral Express crew"/>
         <div>
         <h4>Story</h4>
         <p>The player takes on the role of the Trailblazer, a character experiencing a
             total loss of memory, who travels the galaxy on the Astral Express(a spaceship).
             The story involves uncovering secrets of worlds, learning and meeting characters,
-            solving conflicts of stories, and experiencing the dark and light moments.</p>
+            solving conflicts of stories, and experiencing the dark and light moments.
+            Hover over the image to the right to see some previews of the game ----></p>
         <h4>Gacha Sytem</h4>
         <p>If you don't know already, a gacha game uses a 'gacha' or a 'loot box' mechanic to reward the player
             with randomized virtual items such as charcters and equipment. You use in game currency that can
@@ -156,7 +200,11 @@
             <li>Tears of Themis</li>
         </ul>
         </div></div>
+        <div id="buttondiv">
+        <button id="button" onclick="{show()}">Click to see more</button>
+        </div>
         <div id="final">
+        <div id="finals">
         <div>
         <img id="image-three" src="https://preview.redd.it/commemorative-illustration-celebrating-100-days-since-star-v0-7ocyiu5op0gb1.jpg?width=1080&crop=smart&auto=webp&s=78b1c67bc902cbce52f0d5eadda7a7612f651c78" 
         alt="A lot of the characters"/>
@@ -174,6 +222,6 @@
         </div><div>
         <img id="image-four" src="https://preview.redd.it/honkai-star-rail-on-a-train-c-by-v0-l06aqncn637b1.jpg?width=640&crop=smart&auto=webp&s=979d72e7fac8be40e82d4a6e47d6b5efbe121918" 
         alt="A lot of the characters on a train"/>
-        </div></div>
+        </div></div></div>
     </body>
 </html>
