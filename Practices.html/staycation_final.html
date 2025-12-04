@@ -1,81 +1,56 @@
-<!--KR 6th staycation final project-->
+<!--KR 6th Stacation final-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bear Lake</title>
+    <title>BearLake</title>
     <style>
-        h1{
-            font-family: 'Times New Roman', Times, serif;
+        body{
+            background-color: rgb(228, 232, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }#title{
             text-align: center;
-            border: dashed  5px rgb(68, 126, 104);
-            border-radius: 35px;
-            background-color: rgb(110, 161, 123);
-            color:rgb(224, 255, 233);
-        }body{
-            color:rgb(224, 255, 233);
-            background-color: rgb(198, 255, 247);
-        }h3{
-            text-decoration: underline;
-        }#wrapper{
+            font-size: xx-large;
+            font-weight: 100;
+            letter-spacing: 10px;
+        }#slogan{
+            text-align: center;
+            color: rgb(88, 115, 146);
+       }#buttonarea{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }button{
+            margin: 10px;
         }#one{
-            height: 250px
-        }#section_one{
+            height: 400px;
+        }#collage{
+            display: grid;
+            display: flex
+            grid-template-columns: 1fr 1fr;
+        }#right{
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            background-color: rgb(110, 161, 123);
-            margin: 30px;
-            padding: 20px;
-        }#section_two{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            border: 100px;
-            background-color: rgb(110, 161, 123);
-            margin: 30px;
-            padding: 20px;
-        }#section_three{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            border: 100px;
-            background-color: rgb(110, 161, 123);
-            margin: 30px;
-            padding: 20px;}
+            fle
+        }
     </style>
 </head>
 <body>
-    <h1>₊⊹Bear Lake⊹₊</h1>
-    <div id="wrapper">
-    <div id="section_one">
-    <h3>Bear Lake!</h3>
-    <img id="one" src = "https://bearlake.org/wp-content/uploads/bear-lake-sight-seeing.jpg" 
-    alt ="beautiful bear lake image from top of a hill"/>
-    <p>Bear Lake is a large freshwater lake. It's known for it's bright turquoise water and it is called
-        the "Caribbean of the Rockies". It is a popular destination for those looking for 
-        a fun summer vacation and even a winter one! </p>
+    <h1 id="title">𓇼Bear Lake⛱</h1>
+    <h5 id="slogan">⋆☀︎.your next vacation☀︎༄.°</h5>
+    <p></p>
+    <div id="buttonarea">
+    <button>Location</button>
+    <button>Places to Stay</button>
+    <button>Fun activities</button>
+    <button>Species and cool facts</button>
     </div>
-    <div id="section_two">
-    <h3>Where it's located!</h3>
-    <img id="one" src = "https://pubs.usgs.gov/of/2003/of03-150/html/images/LOC.JPG" 
-    alt ="the bear lake split by Utah and Idaho's border"/>
-    <p>Border of Utah and Idaho, but this website is about the side in Utah. It specifically is
-        on the border of Rich county, Utah, which is situated in the northeastern part
-        of Utah. Is a significant geological feature situated in a fault-bounced valley. The Utah side is
-        apart of Bear Lake State Park
-    </p>
+    <div id = "collage">
+    <div id = "left">
+    <img id="one" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTjxUMFaBHdv2GGk_38NdrBWQBSRzKZKWZ4Ya7BpR7_-uoBnRWLQ_NpJ7g1XtrDtkePjY-Wu0JwB7ZpWN61rFUVPr4s&s=19"/>
     </div>
-    <div id="section_three">
-    <h3>What to do</h3>
-    <img id="one" src = "https://watersedgebearlake.com/wp-content/uploads/2017/01/MG_5429b.jpg" 
-    alt ="Kids on a tube in the wake of the boat."/>
-    <p>This is what you would like to do there</p>
-    </div>
-    </div>
-    
+    <div id="right">
+    <img id="two" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQhwuiFMFX2aE2_nGbPlutOsNl_BV2xx8ZzpcshFLVwUZss8n__y6UAoM1Zqnc-8FFO_UEyk3Pd_eeqqnozFNSJw-w&s=19"/>
+    <img id="sthree" alt="Bear Lake image" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzc7Bysmo4xGF1W_qqU-f33GCXUiKcPC2OsO4L8tPYzVXrJylYIHlsNulkgekTywAKZNN9JuKhkWXFPZAuCZ4IzdDWnELPMWPn0j_H5SpSj9EHUmz96GxmpHMgYRVjDbcm3SWzWMQ=w540-h312-n-k-no"/>
+    </div></div>
 </body>
 </html>
