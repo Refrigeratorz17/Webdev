@@ -22,35 +22,74 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }button{
             margin: 10px;
-        }#one{
+            color: rgb(172, 179, 209);
+
+            background-color: rgb(84, 104, 141);
+        }img{
             height: 400px;
-        }#collage{
+            width: auto;
+            margin: 10px;
+            margin-left: 20px;
+            box-shadow: 50px 30px 5px rgb(175, 175, 194);
+            
+        }#top{
             display: grid;
-            display: flex
-            grid-template-columns: 1fr 1fr;
-        }#right{
             display: flex;
-            fle
+            grid-template-columns: 1fr 1fr
+            
+        }#bottom{
+            display: grid;
+            display: flex;
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }#collage{
+            display:flex;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            flex-wrap: wrap;
+            justify-content: center;
+        }#one{
+            margin-right: 100px;
+        }#two{
+            margin-left: 100px;
+        }#locate{
+            display: none;
         }
     </style>
+    <script>
+        showing = "none"
+            function showt(){
+                if(showing == "none"){
+                document.getElementById("locate").style.display = "block" 
+                showing = "block"
+                document.getElementById("lb").innerHTML = "see less"}
+                else{
+                document.getElementById("locate").style.display = "none" 
+                showing = "none"
+                document.getElementById("lb").innerHTML = "Location"}
+            }
+    </script>
 </head>
 <body>
     <h1 id="title">𓇼Bear Lake⛱</h1>
     <h5 id="slogan">⋆☀︎.your next vacation☀︎༄.°</h5>
     <p></p>
     <div id="buttonarea">
-    <button>Location</button>
-    <button>Places to Stay</button>
-    <button>Fun activities</button>
-    <button>Species and cool facts</button>
+    <button id="lb" onclick="{show()}">Location</button>
+    <button id="sb" onclick="{showt()}">Places to Stay</button>
+    <button id="fb" onclick="{show()}">Fun activities</button>
+    <button id="fb" onclick="{show()}">Species and cool facts</button>
+    <p id="locate">location blah blah</p>
+    <p id="stay">stay</p>
+    <p id="fun">fun blah blah</p>
+    <p id="fact">facts blah blah</p>
     </div>
     <div id = "collage">
-    <div id = "left">
+    <div id="top">
     <img id="one" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTjxUMFaBHdv2GGk_38NdrBWQBSRzKZKWZ4Ya7BpR7_-uoBnRWLQ_NpJ7g1XtrDtkePjY-Wu0JwB7ZpWN61rFUVPr4s&s=19"/>
-    </div>
-    <div id="right">
     <img id="two" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQhwuiFMFX2aE2_nGbPlutOsNl_BV2xx8ZzpcshFLVwUZss8n__y6UAoM1Zqnc-8FFO_UEyk3Pd_eeqqnozFNSJw-w&s=19"/>
-    <img id="sthree" alt="Bear Lake image" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzc7Bysmo4xGF1W_qqU-f33GCXUiKcPC2OsO4L8tPYzVXrJylYIHlsNulkgekTywAKZNN9JuKhkWXFPZAuCZ4IzdDWnELPMWPn0j_H5SpSj9EHUmz96GxmpHMgYRVjDbcm3SWzWMQ=w540-h312-n-k-no"/>
+    </div><div id="bottom">
+    <img id="three" alt="Bear Lake image" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzc7Bysmo4xGF1W_qqU-f33GCXUiKcPC2OsO4L8tPYzVXrJylYIHlsNulkgekTywAKZNN9JuKhkWXFPZAuCZ4IzdDWnELPMWPn0j_H5SpSj9EHUmz96GxmpHMgYRVjDbcm3SWzWMQ=w540-h312-n-k-no"/>
     </div></div>
 </body>
 </html>
