@@ -60,9 +60,29 @@
         }#all{
             background-color: aliceblue;
             margin: 10px;
+        }#para{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }#four{
+            margin-left: 105px;
+            width: 516px;
         }
     </style>
     <script>
+        let images=["https://idahohighcountry.org/wp-content/uploads/bear-lake-recreation-lodging-utah-idaho.jpg",
+            "https://bearlake.org/wp-content/uploads/94385980_3269045716463689_7742076750342914048_o.jpg",
+            "https://bearlake.org/wp-content/uploads/bear-lake-state-park-rendezvous-beach.jpg",
+            "https://as1.ftcdn.net/jpg/03/76/72/04/1000_F_376720459_dvarTwC8inrMO665hKkD7GMElPUFQSmu.jpg",
+            "https://www.travelandleisure.com/thmb/_ATO82Rty5zkpOhbBJMSAS1l2fc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-lead-image-BEARLAKEUT0725-bbbc877963a4452ebdbed565c2b00237.jpg",
+            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHRC-T1N47UvfCIAnu-S4OjYAEYTVhsd3KcHZA4o65IwDG99TlCHifj3T2bChoj8YgLXcJ4D9YRV2NbfS-J8EAuiAPfDDs424_QG45y_zvLHltaAfXuB3kbZZd2aO6eQDAlsQeo2nPMFxH9rY5zZldqUBuU-HHeySLkSSO6OTxvAkBVWZoxwBvbGjjY3Ul/s3648/sign.JPG",
+            "https://bearlake.org/wp-content/uploads/sunrise-resort-event-center-bear-lake-utah-1.jpg",
+            "https://watersedgebearlake.com/wp-content/uploads/2020/10/20.09.22-Waters-Edge-aerial-E.jpg",
+            "https://bearlake.org/wp-content/uploads/zipz-restaurant-garden-city-utah.jpg",
+            "https://bearlake.org/wp-content/uploads/bear-lake-pizza-garden-city-utah.jpg",
+            "https://bearlakepremiercabins.com/wp-content/uploads/2022/12/Crepes-and-Coffee-Breakfast-Restaurant-1947x864-1.jpg",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/9e/b8/75/caption.jpg?w=1200&h=1200&s=1",
+            "https://bearlake.org/wp-content/uploads/koa-Bear-Lake-Marina-Side-Holiday.jpg"]
+        let counter = 0
         showing = "none"
             function show(){
                 if(showing == "none"){
@@ -74,6 +94,16 @@
                 showing = "none"
                 document.getElementById("button").innerHTML = "Click to show more."}
             }
+            function change(){
+                if(counter < images.length){
+                    document.getElementById("four").src = images
+                    [counter]
+                    counter += 1
+                }else{
+                    counter = 0
+                    document.getElementById("four").src = images
+                    [counter]
+                }}
     </script>
 </head>
 <body>
@@ -99,12 +129,15 @@
     <button id="button" onclick="{show()}">Click to see more</button>
     </div>
     <div id ="final">
+    <div id="para">
     <p id="paragraph">Bear Lake's stunning colors comes from calcium carbohydrates, and is 
         home to unique fish shuch as Bonneville Cisco, and whitefish. There's also the 
         legend of the bear lake monster. But my favorite has got to be 
-        all the rasberry themed things, like rasberry shakes at rasberry days.</p>
-    <img id="four" alt="blue waters" src="https://bearlake.org/wp-content/uploads/bear-lake-sight-seeing.jpg"/>
-    </div>
+        all the rasberry themed things, like rasberry shakes at rasberry days. Hover over the image on the right. There's 
+        so many resorts and places to stay that hold perks and acitivies to entertain. There's also plenty of food places and stores 
+        you can get a gift from.</p>
+    <img id="four" alt="blue waters" onmouseover = "change()" src="https://bearlake.org/wp-content/uploads/bear-lake-sight-seeing.jpg"/>
+    </div></div>
     <div id = "collage">
     <div id="top">
     <img id="one" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTjxUMFaBHdv2GGk_38NdrBWQBSRzKZKWZ4Ya7BpR7_-uoBnRWLQ_NpJ7g1XtrDtkePjY-Wu0JwB7ZpWN61rFUVPr4s&s=19"/>
