@@ -20,13 +20,14 @@
        }#buttonarea{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
         }button{
             margin: 10px;
             color: rgb(172, 179, 209);
 
             background-color: rgb(84, 104, 141);
         }img{
-            height: 400px;
+            height: 300px;
             width: auto;
             margin: 10px;
             margin-left: 20px;
@@ -52,37 +53,57 @@
             margin-right: 100px;
         }#two{
             margin-left: 100px;
-        }#locate{
+        }#final{
             display: none;
+        }body{
+            color: rgb(71, 97, 135);
+        }#all{
+            background-color: aliceblue;
+            margin: 10px;
         }
     </style>
     <script>
         showing = "none"
-            function showt(){
+            function show(){
                 if(showing == "none"){
-                document.getElementById("locate").style.display = "block" 
+                document.getElementById("final").style.display = "block" 
                 showing = "block"
-                document.getElementById("lb").innerHTML = "see less"}
+                document.getElementById("button").innerHTML = "Close."}
                 else{
-                document.getElementById("locate").style.display = "none" 
+                document.getElementById("final").style.display = "none" 
                 showing = "none"
-                document.getElementById("lb").innerHTML = "Location"}
+                document.getElementById("button").innerHTML = "Click to show more."}
             }
     </script>
 </head>
 <body>
     <h1 id="title">𓇼Bear Lake⛱</h1>
+    <div id="all">
     <h5 id="slogan">⋆☀︎.your next vacation☀︎༄.°</h5>
-    <p></p>
+    <p>Bear Lake is a lake that is on Utah's border Rich county, and the other half is in Idaho.
+        It's known for it's nice colorful waters and beautiful location. We will be focusing
+        on the area in Utah, not the part in Idaho. It's an amazing vacation with 
+        plenty of places to stay, along with resorts, camping areas, hotels and condo's, 
+        truly anything that could fit anyones liking. Some fun activties you 
+        might want to indulge in are here:
+    </p>
+    <ul>
+        <li>boating</li>
+        <li>paddleboarding</li>
+        <li>swimming</li>
+        <li>hiking</li>
+        <li>ATV trails</li>
+        <li>and even snowmobiling in the winter.</li>
+    </ul>
     <div id="buttonarea">
-    <button id="lb" onclick="{show()}">Location</button>
-    <button id="sb" onclick="{showt()}">Places to Stay</button>
-    <button id="fb" onclick="{show()}">Fun activities</button>
-    <button id="fb" onclick="{show()}">Species and cool facts</button>
-    <p id="locate">location blah blah</p>
-    <p id="stay">stay</p>
-    <p id="fun">fun blah blah</p>
-    <p id="fact">facts blah blah</p>
+    <button id="button" onclick="{show()}">Click to see more</button>
+    </div>
+    <div id ="final">
+    <p id="paragraph">Bear Lake's stunning colors comes from calcium carbohydrates, and is 
+        home to unique fish shuch as Bonneville Cisco, and whitefish. There's also the 
+        legend of the bear lake monster. But my favorite has got to be 
+        all the rasberry themed things, like rasberry shakes at rasberry days.</p>
+    <img id="four" alt="blue waters" src="https://bearlake.org/wp-content/uploads/bear-lake-sight-seeing.jpg"/>
     </div>
     <div id = "collage">
     <div id="top">
@@ -90,6 +111,6 @@
     <img id="two" alt="Bear Lake image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQhwuiFMFX2aE2_nGbPlutOsNl_BV2xx8ZzpcshFLVwUZss8n__y6UAoM1Zqnc-8FFO_UEyk3Pd_eeqqnozFNSJw-w&s=19"/>
     </div><div id="bottom">
     <img id="three" alt="Bear Lake image" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzc7Bysmo4xGF1W_qqU-f33GCXUiKcPC2OsO4L8tPYzVXrJylYIHlsNulkgekTywAKZNN9JuKhkWXFPZAuCZ4IzdDWnELPMWPn0j_H5SpSj9EHUmz96GxmpHMgYRVjDbcm3SWzWMQ=w540-h312-n-k-no"/>
-    </div></div>
+    </div></div></div>
 </body>
 </html>
